@@ -1,17 +1,18 @@
-Seu Portfólio Web deve ter as seguintes informações:
+# HTML exercise from Trybe Course
+## Here the exercise proposal was to make a web portfolio using only HTML language
+### The exercise has to fulfill 8 requirements:
+    1º Complete name;
 
-Seu nome completo;
+    2º A current photo of you, accompanied by an alternative text, which should be the description of the photo you are using;
 
-Uma foto atual sua, acompanhada de um texto alternativo, que deve ser a descrição da foto que você está usando;
+    3º A brief description of you, highlighting some information such as nationality and the city / state where you live;
 
-Uma breve descrição sobre você, destacando algumas informações como nacionalidade e a cidade/estado onde mora;
+    4º A list of skills you have, highlighting the one you are most proud of;
 
-Uma lista de habilidades que você possui, com destaque para aquela de que você mais se orgulha;
+    5º An internal link to your photo;
+    
+    6º An external link to a blog that you like, that opens in a new tab;
 
-Um link interno para a sua foto;
-
-Um link externo para algum blog de que você goste, que abra em uma nova aba;
-
-Partes do seu portfólio destacadas com negrito e/ou itálico;
-
-Um índice com links internos para as diferentes seções do seu portfólio.
+    7º Parts of your portfolio highlighted in bold and / or italics;
+    
+    8º An index with internal links to the different sections of your portfolio.
