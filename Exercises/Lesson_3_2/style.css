@@ -1,0 +1,19 @@
+/* The second font family to use -- font-family: 'Roboto', sans-serif; -- */
+header {
+    background-color: #96E6B3
+}
+main {
+
+}
+footer {
+    background-color: #96E6B3
+}
+body {
+    background-color: #f1fffa;
+    font-family: 'Exo 2', sans-serif;
+}
+#profile-photo {
+    border-radius: 100%;
+    width: 264px;
+    height: 264px;
+}
