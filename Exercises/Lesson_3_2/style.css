@@ -1,24 +1,28 @@
 /* The second font family to use -- font-family: 'Roboto', sans-serif; -- */
+
+/* HEADER / MAIN / FOOTER */
 header {
     background-color: #568259;
-    padding: 5px;
-    
+    text-align: center;
+    padding: 10px;
+}
+.header-buttons{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; 
+    padding: 10px;
+    text-decoration: none;
+    color: #F1FFFA; 
 }
 main {
     background-color: #CCFCCB;
-    /* padding: 5px; */
 }
 footer {
     background-color: #568259;
-    padding: 5px;
+    padding: 0,1px;
 }
+/* BODY */
 body {
     font-family: 'Exo 2', sans-serif;
-    background-color: #F1FFFA;
-    margin: 0px;
-}
-#profile-photo {
-    border-radius: 100%;
-    width: 264px;
-    height: 264px;
+    background-color: #CCFCCB;
+    margin: 0;
 }
