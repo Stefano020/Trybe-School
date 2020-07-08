@@ -1,0 +1,62 @@
+/* HEADER / MAIN / FOOTER */
+header {
+    background-color: #568259;
+    text-align: center;
+    padding: 10px;
+}
+.header-buttons{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; 
+    padding: 10px;
+    text-decoration: none;
+    color: #F1FFFA; 
+}
+main {
+    background-color: #CCFCCB;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #CCFCCB;
+    margin: 0px;
+}
+.profile-photo{
+    height: 400px;
+    border-radius: 100%;
+    padding: 20px;
+    float: left;
+}
+.my-name {
+    font-size: 80px;
+    color: #464E47;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom:  0px;
+}
+.about-me {
+    font-size: 25px;
+    color: #464E47;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+.skills {
+    display: inline-block;    
+}
+.soft-hard-skills{
+    font-size: 25px;
+    color: #464E47;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+}
+footer {
+    background-color: #568259;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+.blog-link {
+    text-decoration: none;
+    color: #F1FFFA;
+    padding: 10px;
+}
