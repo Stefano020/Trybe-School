@@ -13,7 +13,6 @@ header {
 }
 main {
     background-color: #CCFCCB;
-    
 }
 body {
     font-family: 'Exo 2', sans-serif;
@@ -25,9 +24,6 @@ body {
     border-radius: 100%;
     padding: 20px;
     float: left;
-}
-footer {
-    background-color: #568259;
 }
 .my-name {
     font-size: 80px;
@@ -52,4 +48,15 @@ footer {
 }
 li {
     list-style: none;
+}
+footer {
+    background-color: #568259;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+.blog-link {
+    text-decoration: none;
+    color: #F1FFFA;
+    padding: 10px;
 }
