@@ -1,6 +1,35 @@
 body {
     text-align: center;
+    margin: auto;    
+}
+header {
+    background-color: #E08E45;
+    padding-top: 1px;
+}
+nav {
+    display: inline;
+}
+main {
+    background-color: #F8F4A6;
+}
+footer {
+    background-color: #E08E45;
 }
 img {
     width: 40%;
+}
+.titulo-principal {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+.links-site {
+    text-decoration-style: none;
+}
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
 }
