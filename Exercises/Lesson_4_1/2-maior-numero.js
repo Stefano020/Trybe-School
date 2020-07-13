@@ -5,4 +5,4 @@ let a = 2;
 let b = 5;
 
 let maiorNumero = (a > b) ? "a é maior." : "b é maior"
-console.log (maiorNumero)
+console.log (maiorNumero);
