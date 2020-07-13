@@ -1,35 +1,130 @@
 body {
     text-align: center;
-    margin: auto;    
+    margin: auto;
+    background-color: #F8F4A6;
 }
 header {
     background-color: #E08E45;
     padding-top: 1px;
-}
-nav {
-    display: inline;
+    width: 100%;
+    height: 10%;
 }
 main {
     background-color: #F8F4A6;
-}
-footer {
-    background-color: #E08E45;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 img {
-    width: 40%;
+    width: 70%;
+    border-width: 5px;
+    border-color: #E08E45;
+    border-style: groove;
 }
 .titulo-principal {
     font-family: 'Indie Flower', cursive;
     font-size: 50px;
 }
-.links-site {
-    text-decoration-style: none;
+ul {
+    text-align: left;
+    padding-right: 20px;
+    float: right;
+}
+.links-site {   
+    position: fixed;
+    font-size: 30px;
 }
 li {
     list-style: none;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
-
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    margin: 20px;
+}
+h2 {
+    font-family: 'Indie Flower', cursive;
     font-size: 35px;
+}
+.nome-cientifico {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-left: 300px;
+}
+.referencias {
+    float: left;
+    font-size: 40px;
+    letter-spacing: 5px;
+    border-style: solid;
+    padding-right: 10px;
+}
+.referencias-link {
+    font-size: 20px;
+}
+.referencias-titulo {
+    margin-bottom: 0px;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+.youtube-link {
+    float: right;
+    margin-top: 80px;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.youtube-link-p {
+    font-size: 30px;
+}
+.referencias-youtube {
+    padding-bottom: 30%;
+    margin-top: 50px;
+}
+footer {
+    background-color: #E08E45;
+    padding-bottom: 1px;
+    position: sticky;
+}
+table {
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-color: #E08E45;
+    border-width: 3px;
+    border-style: solid;
+    
+}
+th {
+    font-family: 'Indie Flower', cursive;
+    background-color: #E7AA73;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+td {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+p {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 20px;
+}
+.copyright {
+    margin-bottom: 0px;
+    font-weight: 1000;
+}
+a {
+   text-decoration: none; 
+   color: black;
+}
+a:visited {
+    text-decoration: none; 
+    color: black;
+}
+a:hover {
+    background-color: #E7AA73;
 }
