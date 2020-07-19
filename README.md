@@ -8,36 +8,38 @@ The program has more than **1,500 hours** of classroom and online classes and co
 
 ### [Get in touch!](https://www.linkedin.com/in/stefano-branz/)
 
-## Introduction - Web Development :white_check_mark:
+## Introduction - Web Development :hourglass_flowing_sand:
+<!-- :white_check_mark: -->
 ##### Block 1: Introduction - Unix & Shell
-- [ ] 1-3: *Unix & Bash - Part 1*
-- [ ] 1-4: *Unix & Bash - Part 2*
-- [ ] 1-5: *Shell Script*
+- [x] 1-3: *Unix & Bash - Part 1*
+- [x] 1-4: *Unix & Bash - Part 2*
+- [x] 1-5: *Shell Script*
 ##### Block 2: Git & GitHub 
-- [ ] 2-1: *What is it and what is it for?*
-- [ ] 2-2: *Understanding the commands*
-- [ ] 2-3: *Internet - Understanding how it works*
+- [x] 2-1: *What is it and what is it for?*
+- [x] 2-2: *Understanding the commands*
+- [x] 2-3: *Internet - Understanding how it works*
 ##### Block 3: Introduction - HTML & CSS
-- [ ] 3-1: *HTML & CSS - Page structures*
-- [ ] 3-2: *HTML & CSS - Getting Started with CSS*
-- [ ] 3-3: *HTML & CSS - Selectors and positioning*
-- [ ] 3-4: *Semantic HTML*
-- [ ] 3-5: *[Project - HTML & CSS](https://Stefano020.github.io/Projeto-01-Learned-Lessons/)*
+- [x] 3-1: *HTML & CSS - Page structures*
+- [x] 3-2: *HTML & CSS - Getting Started with CSS*
+- [x] 3-3: *HTML & CSS - Selectors and positioning*
+- [x] 3-4: *Semantic HTML*
+- [x] 3-5: *[Project - HTML & CSS](https://Stefano020.github.io/Projeto-01-Learned-Lessons/)*
 ##### Block 4: Introduction - JavaScript
-- [ ] 4-1: *JavaScript - Getting Started*
-- [ ] 4-2: *JavaScript - For Array and Loop*
-- [ ] 4-3: *JavaScript - Programming Logic and Algorithms*
-- [ ] 4-4: *JavaScript - Objects and functions*
-- [ ] 4-5: *JavaScript - DOM and selectors*
-- [ ] 4-6: *JavaScript - Working with elements*
-- [ ] 4-7: *JavaScript - Events*
-- [ ] 4-8: *JavaScript - Web Storage*
-##### Block 5: Introduction - JavaScript - Projects
-- [ ] 5-1: *Project - Meme Generator*
-- [ ] 5-2: *Project - Art with Pixels*
-- [ ] 5-3: *Project - To Do List*
-- [ ] 5-4: *Project - Guess the Color*
-- [ ] 5-5: *Project - Mysterious Card*
+- [x] 4-1: *JavaScript - Getting Started*
+- [x] 4-2: *JavaScript - For Array and Loop*
+- [x] 4-3: *JavaScript - Programming Logic and Algorithms*
+- [x] 4-4: *JavaScript - Objects and functions*
+- [x] 4-5: *Project - Playground Functions*
+##### Block 5: JavaScript - Projects
+- [ ] 5-1: *JavaScript - DOM and selectors*
+- [ ] 5-2: *JavaScript - Working with elements*
+- [ ] 5-3: *JavaScript - Events*
+- [ ] 5-4: *JavaScript - Web Storage*
+- [ ] 5-5: *Project - Meme Generator*
+- [ ] 5-6: *Project - Art with Pixels*
+- [ ] 5-7: *Project - To Do List*
+- [ ] 5-7: *Project - Guess the Color*
+- [ ] 5-7: *Project - Mysterious Card*
 
 ## Front-end development :hourglass_flowing_sand:
 ##### Block 6: Introduction - Front-end
@@ -45,13 +47,14 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [ ] 6-2: *JavaScript libraries and CSS frameworks*
 - [ ] 6-3: *CSS Flexbox - Part 1*
 - [ ] 6-4: *CSS Flexbox - Part 2*
-- [ ] 6-5: Project - Facebook home
+- [ ] 6-5: *CSS Responsive - Mobile First*
+- [ ] 6-6: *Project - Facebook home*
 ##### Block 7: JavaScript ES6 & Unit Tests
 - [ ] 7-1: *JavaScript ES6 - let, const, arrow functions and template literals*
 - [ ] 7-2: *JavaScript ES6 - Objects*
 - [ ] 7-3: *JavaScript unit tests*
 - [ ] 7-4: *Testing in small steps*
-- [ ] 7-5: *Project - JavaScript Unit Tests
+- [ ] 7-5: *Project - JavaScript Unit Tests*
 ##### Block 8: JavaScript ES6
 - [ ] 8-1: *JavaScript ES6 - Higher Order Functions - forEach, find, filter, some, every, sort*
 - [ ] 8-2: *JavaScript ES6 - Higher Order Functions - map and reduce*
@@ -89,8 +92,10 @@ The program has more than **1,500 hours** of classroom and online classes and co
 ##### Block 16: React
 - [ ] 16-1: *Introduction to Redux*
 - [ ] 16-2: *React with Redux - part 1*
-- [ ] 16-3: *React with Redux - part 2*
-- [ ] 16-4: *Project - Table with data filters*
+- [ ] 16-3: *React with Redux - Practice*
+- [ ] 16-4: *React with Redux - part 2*
+- [ ] 16-5: *Synchronous tests with React-Redux*
+- [ ] 16-6: *Project - Table with data filters*
 ##### Block 17: React
 - [ ] 17-1: *Project - Trivia Game*
 ##### Block 18: React & Redux
@@ -115,45 +120,55 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [ ] 21-4: *Project - Vocabulary Booster*
 ##### Block 22: Relational Databases
 - [ ] 22-1: *Transforming ideas into a database model*
-- [ ] 22-2: *Transforming ideas into a database model - Part 2*
-- [ ] 22-3: *Project - Queries Unite*
-##### Block 23: Relational Databases
-- [ ] 23-1: *Normalization and Normal Forms*
-- [ ] 23-2: *Dumps & Project - One For All*
-##### Block 24: Introduction - NoSQL
-- [ ] 24-1: *MongoDB - Introduction*
-- [ ] 24-2: *Filter Operators*
-- [ ] 24-3: *Project - Data Flights*
-##### Block 25: Updates
-- [ ] 25-1: *Simple Updates*
-- [ ] 25-2: *Complex Updates - Arrays - Part 1*
-- [ ] 25-3: *Complex Updates - Arrays - Part 2*
-- [ ] 25-4: *Project - Commerce*
-##### Block 26: Aggregation Framework
-- [ ] 26-1: *Aggregation Framework - Part 1*
-- [ ] 26-2: *Aggregation Framework - Part 2*
-- [ ] 26-3: *Aggregation Framework - Part 3*
-- [ ] 26-4: *Project - Aggregations*
-##### Block 27: Intro - NodeJS
-- [ ] 27-1: *NodeJS - Introduction*
-- [ ] 27-2: *NodeJS - Architecture*
-- [ ] 27-3: *NodeJS - Asynchronous Flow*
-- [ ] 27-4: *Project - A CLI of Ice and Fire*
+- [ ] 22-2: *Normalization, Normal Forms and Dumps*
+- [ ] 22-3: *Transforming ideas into a database model - Part 2*
+- [ ] 22-4: *Project - One For All*
+##### Block 23: Introduction - NoSQL
+- [ ] 23-1: *MongoDB - Introduction*
+- [ ] 23-2: *Filter Operators*
+- [ ] 23-3: *Project - Data Flights*
+##### Block 24: Updates
+- [ ] 24-1: *Simple Updates*
+- [ ] 24-2: *Complex Updates - Arrays - Part 1*
+- [ ] 24-3: *Complex Updates - Arrays - Part 2*
+- [ ] 24-4: *Project - Commerce*
+##### Block 25: Aggregation Framework
+- [ ] 25-1: *Aggregation Framework - Part 1*
+- [ ] 25-2: *Aggregation Framework - Part 2*
+- [ ] 25-3: *Project - Aggregations*
+##### Block 26: Intro - NodeJS
+- [ ] 26-1: *NodeJS - Introduction*
+- [ ] 26-3: *NodeJS - Asynchronous Flow*
+- [ ] 26-2: *NodeJS - Architecture*
+- [ ] 26-4: *Project - A CLI of Ice and Fire*
+##### Block 27: NodeJS
+- [ ] 27-1: *Express: HTTP with Node.js*
+- [ ] 27-2: *Software Architecture - Introduction to MVC*
+- [ ] 27-3: *Project - Cookmaster*
 ##### Block 28: NodeJS
-- [ ] 28-1: *NodeJS - HTTP requests*
-- [ ] 28-2: *Express - Introduction*
-- [ ] 28-3: *Express - Static files and SSR*
-- [ ] 28-4: *Project - Crypto Index*
+- [ ] 28-1: *Software Architecture - Service Layer*
+- [ ] 28-2: *Web architecture - Rest and Restful*
+- [ ] 28-3: *Project - Store Manager*
 ##### Block 29: NodeJS
-- [ ] 29-1: *NodeJS - JWT - (JSON Web Token)*
-- [ ] 29-2: *NodeJS - Input & Output*
-- [ ] 29-3: *Web architecture - Rest and Restful*
-- [ ] 29-4: *Project - Online Store with JWT*
+- [ ] 29-1: *NodeJS - JWT - JSON Web Token*
+- [ ] 29-2: *NodeJS - Upload files with Multer*
+- [ ] 29-3: *Project - Cookmaster V2*
 
 ## Infrastructures :hourglass_flowing_sand:
 ##### Block 30: Introduction - Deploy
 - [ ] 30-1: *Infrastructure - Deploy with Heroku*
 - [ ] 30-2: *Deploy - Process Managers*
 - [ ] 30-3: *Project - Stranger Things*
-##### Block 31: Software Architecture
-- [ ] 30-1: *Introduction to MVC*
+##### Block 31: Project
+- [ ] 31-1: *Project - Trybeer*
+##### Block 32: Software Architecture
+- [ ] 32-1: *Architecture - SOLID Principles*
+- [ ] 32-2: *ORM - Application interface with the database*
+- [ ] 32-3: *Software Architecture - DDD*
+- [ ] 32-4: *Good practice in writing tests*
+- [ ] 32-5: *Project - Blogs API*
+##### Block 32: Sockets
+- [ ] 33-1: *Sockets - TCP/UDP & NET*
+- [ ] 33-2: *Sockets - Socket.io*
+- [ ] 33-3: *Project - Webchat*
+
