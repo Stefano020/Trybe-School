@@ -69,7 +69,12 @@
         correctText.innerHTML = "Exercício 5.1 - Java Script";
       }
       correctText();
-//  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+// 5- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      function toUpperCase() {
+        let toUpper = document.getElementsByTagName('p')[0];
+        toUpper.style.textTransform = "uppercase";
+      }
+      toUpperCase();
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     
     </script>
