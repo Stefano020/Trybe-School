@@ -75,8 +75,18 @@
         toUpper.style.textTransform = "uppercase";
       }
       toUpperCase();
-//  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-    
+//  6- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      // Criando função
+      function getAllP() {
+        // variável que recebe uma array com todos os elementos 'p' em ordem crescente
+        let allP = document.getElementsByTagName('p');
+        // loop para percorrer cada elemento da array 'allP' que é cada 'p'
+        for (index = 0; index < allP.length; index += 1) {
+          // Uma vez encontrado, printar no console o conteúdo interno do 'p' da array 'allP'
+          console.log (allP[index].innetHTML);
+        }
+      }
+      getAllP();
     </script>
   </body>
 </html>
