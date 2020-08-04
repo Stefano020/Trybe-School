@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
       <!-- CPF - Texto -->
       <div class="line-content">
         <label for="cpf-input">CPF: </label>
-        <input type="text" id="cpf-input" name="cpf-input" maxlength="11" required="required">
+        <input type="text" id="cpf-input" name="cpf-input" maxlength="11" minlength="11" required="required">
       </div>
       <!-- Endereço - Texto -->
       <div class="line-content">
@@ -72,9 +71,9 @@
       <!-- Tipo - Radio Button -->
       <div class="line-content">
         <label for="residence-type">Residence-type</label> 
-        <input type="radio" id="residence-type" name="residence-type">
+        <input type="radio" id="residence-type" name="residence-type" required="required">
         <label for="residence-type">House</label>
-        <input type="radio" id="residence-type" name="residence-type">
+        <input type="radio" id="residence-type" name="residence-type" required="required">
         <label for="residence-type">Apartament</label>
       </div>
     </fieldset>
@@ -96,9 +95,12 @@
         <input type="date" name="start-date" id="start-date" required="required">
       </div>
     </fieldset>
-    <input type="submit" id="submit-button">
-    <input type="reset" id="clear-button">
+    <input type="submit" id="submit-button"></button>
+    <input type="reset" id="clear-button"></button>
   </form>
-  <div id="consolidated-data"></div>
+  <div>
+    <div id="consolidated-data"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,12 @@
+window.onload = function() {
+// É o form que recebe o evento.
+let inputedForm = document.querySelector('.curriculum-form')
+// Não é o submit button que recebe p evento.
 let submitButton = document.getElementById('submit-button');
 let colsolidatedData = document.getElementById('consolidated-data');
 // Function to add all inputed data in a <div>
-submitButton.addEventListener('click', function() {
+
+inputedForm.addEventListener('submit', function() {
   event.preventDefault();
 
   let fullNameParagraph = document.createElement('p');
@@ -53,8 +58,7 @@ submitButton.addEventListener('click', function() {
 let clearButton = document.getElementById('clear-button');
 clearButton.addEventListener('click', function() {
   if (colsolidatedData.innerHTML !== '') {
-  colsolidatedData.remove(this.innerHTML);
-  } else {
-    return;
-  }
+  colsolidatedData.innerHTML = '';
+  } 
 });
+};
