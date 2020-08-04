@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="GET" class="curriculum-form">
+    <fieldset>
+      <!-- Nome - Texto -->
+      <div class="line-content">
+        <label for="full-name-input">Name: </label>
+        <input type="text" id="full-name-input" name="full-name-input" maxlength="40" required="required">
+      </div>
+      <!-- Email - Texto -->
+      <div class="line-content">
+        <label for="emal-input">Email: </label>
+        <input type="text" id="email-input" name="email-input" maxlength="50" required="required">
+      </div>
+      <!-- CPF - Texto -->
+      <div class="line-content">
+        <label for="cpf-input">CPF: </label>
+        <input type="text" id="cpf-input" name="cpf-input" maxlength="11" minlength="11" required="required">
+      </div>
+      <!-- Endereço - Texto -->
+      <div class="line-content">
+        <label for="address-input">Address: </label>
+        <input type="text" id="address-input" name="address-input" maxlength="200" required="required">
+      </div>
+      <!-- Cidade - Texto -->
+      <div class="city-content">
+        <label for="city-input">City: </label>
+        <input type="text" id="city-input" name="city-input" maxlength="28" required="required">
+      </div>
+      <!-- Estado - ComboBox -->
+      <div class="line-content">
+        <label for="states">State: </label>
+        <select required="required" id="states" name="states">
+          <option value=""></option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+      </select>
+      </div>
+      <!-- Tipo - Radio Button -->
+      <div class="line-content">
+        <label for="residence-type">Residence-type</label> 
+        <input type="radio" id="residence-type" name="residence-type" required="required">
+        <label for="residence-type">House</label>
+        <input type="radio" id="residence-type" name="residence-type" required="required">
+        <label for="residence-type">Apartament</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="line-content">
+        <label for="curriculum-summary">Curriculum summary: </label>
+        <textarea id="curriculum-summary" name="curriculum-summary" rows="4" cols="50" maxlength="1000" required="required"></textarea>
+      </div>
+      <div class="line-content">
+        <label for="job">Job: </label>
+        <input type="text" id="job" name="job" maxlength="40" required="required">
+      </div>
+      <div class="line-content">
+        <label for="job-description">Job description: </label>
+        <input type="text" id="job-description" name="job-description" maxlength="500" required="required">
+      </div>
+      <div class="line-content">
+        <label for="start-date">Start date: </label>
+        <input type="date" name="start-date" id="start-date" required="required">
+      </div>
+    </fieldset>
+    <input type="submit" id="submit-button"></button>
+    <input type="reset" id="clear-button"></button>
+  </form>
+  <div>
+    <div id="consolidated-data"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
