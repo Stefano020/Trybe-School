@@ -1,4 +1,5 @@
 window.onload = function() {
+
 // É o form que recebe o evento.
 let inputedForm = document.querySelector('.curriculum-form')
 // Não é o submit button que recebe p evento.
