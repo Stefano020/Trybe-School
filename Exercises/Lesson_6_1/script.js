@@ -2,7 +2,7 @@ window.onload = function() {
 // É o form que recebe o evento.
 let inputedForm = document.querySelector('.curriculum-form')
 // Não é o submit button que recebe p evento.
-let submitButton = document.getElementById('submit-button');
+// let submitButton = document.getElementById('submit-button');
 let colsolidatedData = document.getElementById('consolidated-data');
 // Function to add all inputed data in a <div>
 
