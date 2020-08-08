@@ -34,8 +34,8 @@ inputedForm.addEventListener('submit', function() {
   statesParagraph.innerHTML = document.getElementById('states').value;
   colsolidatedData.appendChild(statesParagraph);
 
-  let residenceParagraph = document.createElement('p');
-  residenceParagraph.innerHTML = document.getElementById('residence-type').value;
+  const residenceParagraph = document.createElement('p');
+  residenceParagraph.innerHTML = document.querySelector('.residence-type:checked').value;
   colsolidatedData.appendChild(residenceParagraph);
 
   let curriculumParagraph = document.createElement('p');
