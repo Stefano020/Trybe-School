@@ -3,38 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-  <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Lesson_6_2</title>
 </head>
 <body>
   <form action="" method="GET" class="curriculum-form">
     <fieldset>
       <div class="line-content">
         <label for="full-name-input">Name: </label>
-        <input type="text" id="full-name-input" name="full-name-input" maxlength="40" required="required">
+        <input type="text" id="full-name-input" name="full-name-input" maxlength="40" required>
       </div>
       <div class="line-content">
-        <label for="emal-input">Email: </label>
-        <input type="text" id="email-input" name="email-input" maxlength="50" required="required">
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" maxlength="50" required data-validate-field="email">
       </div>
       <div class="line-content">
         <label for="cpf-input">CPF: </label>
-        <input type="text" id="cpf-input" name="cpf-input" maxlength="11" minlength="11" required="required">
+        <input type="text" id="cpf-input" name="cpf-input" maxlength="11" minlength="11" required>
       </div>
       <div class="line-content">
         <label for="address-input">Address: </label>
-        <input type="text" id="address-input" name="address-input" maxlength="200" required="required">
+        <input type="text" id="address-input" name="address-input" maxlength="200" required>
       </div>
       <div class="city-content">
         <label for="city-input">City: </label>
-        <input type="text" id="city-input" name="city-input" maxlength="28" required="required">
+        <input type="text" id="city-input" name="city-input" maxlength="28" required>
       </div>
       <div class="line-content">
         <label for="states">State: </label>
-        <select required="required" id="states" name="states">
+        <select required id="states" name="states" required>
           <option value=""></option>
           <option value="AC">Acre</option>
           <option value="AL">Alagoas</option>
@@ -68,39 +67,38 @@
       <div class="line-content">
         <label for="residence-type">Residence type: </label> 
         <label for="house">House</label>
-        <input type="radio" id="house" class="residence-type" value="House" name="residence-type" required="required">
+        <input type="radio" id="house" class="residence-type" value="House" name="residence-type" required>
         <label for="apartament">Apartament</label>
-        <input type="radio" id="apartament" class="residence-type" value="Apartament" name="residence-type" required="required">
-        
+        <input type="radio" id="apartament" class="residence-type" value="Apartament" name="residence-type" required>
       </div>
     </fieldset>
     <fieldset>
       <div class="line-content">
         <label for="curriculum-summary">Curriculum summary: </label>
-        <textarea id="curriculum-summary" name="curriculum-summary" rows="4" cols="50" maxlength="1000" required="required"></textarea>
+        <textarea id="curriculum-summary" name="curriculum-summary" rows="4" cols="50" maxlength="1000" required></textarea>
       </div>
       <div class="line-content">
         <label for="job">Job: </label>
-        <input type="text" id="job" name="job" maxlength="40" required="required">
+        <input type="text" id="job" name="job" maxlength="40" required>
       </div>
       <div class="line-content">
         <label for="job-description">Job description: </label>
-        <input type="text" id="job-description" name="job-description" maxlength="500" required="required">
+        <input type="text" id="job-description" name="job-description" maxlength="500" required>
       </div>
       <div class="line-content">
         <label for="start-date">Start date: </label>
-        <input type="date" name="start-date" id="start-date" required="required">
+        <input name="date" type="text" id="datepicker" required>
+        <!-- <input type="date" name="start-date" id="start-date" required> -->
       </div>
     </fieldset>
-    <input type="submit" id="submit-button"></button>
-    <input type="reset" id="clear-button"></button>
+    <input class="btn btn-primary" type="submit" id="submit-button"></button>
+    <input class="btn btn-danger" type="reset" id="clear-button"></button>
   </form>
   <div>
     <div id="consolidated-data"></div>
   </div>
-
+  <script src="just-validate.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-
   <script src="script.js"></script>
 </body>
 </html>

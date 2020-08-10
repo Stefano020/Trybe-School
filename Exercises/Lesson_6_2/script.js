@@ -1,65 +1,84 @@
 window.onload = function() {
+  let inputedForm = document.querySelector('.curriculum-form')
+  let colsolidatedData = document.getElementById('consolidated-data');
+  
 
-// É o form que recebe o evento.
-let inputedForm = document.querySelector('.curriculum-form')
-// Não é o submit button que recebe p evento.
-// let submitButton = document.getElementById('submit-button');
-let colsolidatedData = document.getElementById('consolidated-data');
-// Function to add all inputed data in a <div>
+  inputedForm.addEventListener('submit', function() {
+    event.preventDefault();
+    
+    let fullNameParagraph = document.createElement('p');
+    fullNameParagraph.innerHTML = document.getElementById('full-name-input').value;
+    colsolidatedData.appendChild(fullNameParagraph);
 
-inputedForm.addEventListener('submit', function() {
-  event.preventDefault();
+    let emailParagraph = document.createElement('p');
+    emailParagraph.innerHTML = document.getElementById('email').value;
+    colsolidatedData.appendChild(emailParagraph);
 
-  let fullNameParagraph = document.createElement('p');
-  fullNameParagraph.innerHTML = document.getElementById('full-name-input').value;
-  colsolidatedData.appendChild(fullNameParagraph);
+    let cpfParagraph = document.createElement('p');
+    cpfParagraph.innerHTML = document.getElementById('cpf-input').value;
+    colsolidatedData.appendChild(cpfParagraph);
 
-  let emailParagraph = document.createElement('p');
-  emailParagraph.innerHTML = document.getElementById('email-input').value;
-  colsolidatedData.appendChild(emailParagraph);
+    let addressParagraph = document.createElement('p');
+    addressParagraph.innerHTML = document.getElementById('address-input').value;
+    colsolidatedData.appendChild(addressParagraph);
 
-  let cpfParagraph = document.createElement('p');
-  cpfParagraph.innerHTML = document.getElementById('cpf-input').value;
-  colsolidatedData.appendChild(cpfParagraph);
+    let cityParagraph = document.createElement('p');
+    cityParagraph.innerHTML = document.getElementById('city-input').value;
+    colsolidatedData.appendChild(cityParagraph);
 
-  let addressParagraph = document.createElement('p');
-  addressParagraph.innerHTML = document.getElementById('address-input').value;
-  colsolidatedData.appendChild(addressParagraph);
+    let statesParagraph = document.createElement('p');
+    statesParagraph.innerHTML = document.getElementById('states').value;
+    colsolidatedData.appendChild(statesParagraph);
 
-  let cityParagraph = document.createElement('p');
-  cityParagraph.innerHTML = document.getElementById('city-input').value;
-  colsolidatedData.appendChild(cityParagraph);
+    const residenceParagraph = document.createElement('p');
+    residenceParagraph.innerHTML = document.querySelector('.residence-type:checked').value;
+    colsolidatedData.appendChild(residenceParagraph);
 
-  let statesParagraph = document.createElement('p');
-  statesParagraph.innerHTML = document.getElementById('states').value;
-  colsolidatedData.appendChild(statesParagraph);
+    let curriculumParagraph = document.createElement('p');
+    curriculumParagraph.innerHTML = document.getElementById('curriculum-summary').value;
+    colsolidatedData.appendChild(curriculumParagraph);
 
-  const residenceParagraph = document.createElement('p');
-  residenceParagraph.innerHTML = document.querySelector('.residence-type:checked').value;
-  colsolidatedData.appendChild(residenceParagraph);
+    let jobParagraph = document.createElement('p');
+    jobParagraph.innerHTML = document.getElementById('job').value;
+    colsolidatedData.appendChild(jobParagraph);
 
-  let curriculumParagraph = document.createElement('p');
-  curriculumParagraph.innerHTML = document.getElementById('curriculum-summary').value;
-  colsolidatedData.appendChild(curriculumParagraph);
+    let jobDescriptionParagraph = document.createElement('p');
+    jobDescriptionParagraph.innerHTML = document.getElementById('job-description').value;
+    colsolidatedData.appendChild(jobDescriptionParagraph);
 
-  let jobParagraph = document.createElement('p');
-  jobParagraph.innerHTML = document.getElementById('job').value;
-  colsolidatedData.appendChild(jobParagraph);
+    let startDateParagraph = document.createElement('p');
+    startDateParagraph.innerHTML = document.getElementById('datepicker').value;
+    colsolidatedData.appendChild(startDateParagraph);
+  
+  });
 
-  let jobDescriptionParagraph = document.createElement('p');
-  jobDescriptionParagraph.innerHTML = document.getElementById('job-description').value;
-  colsolidatedData.appendChild(jobDescriptionParagraph);
+  let clearButton = document.getElementById('clear-button');
+  clearButton.addEventListener('click', function() {
+    if (colsolidatedData.innerHTML !== '') {
+    colsolidatedData.innerHTML = '';
+    } 
+  });
 
-  let startDateParagraph = document.createElement('p');
-  startDateParagraph.innerHTML = document.getElementById('start-date').value;
-  colsolidatedData.appendChild(startDateParagraph);
-});
+  var picker = new Pikaday({ 
+    field: document.getElementById('datepicker'),
+    onSelect: function(date) {
+      console.log(date);
+    }
+  });
 
-// Function to clear all inputs and Consolidated data div content
-let clearButton = document.getElementById('clear-button');
-clearButton.addEventListener('click', function() {
-  if (colsolidatedData.innerHTML !== '') {
-  colsolidatedData.innerHTML = '';
-  } 
-});
+  new window.JustValidate('.curriculum-form', {
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      email: {
+        required: 'Email field is required',
+        email: 'Invalid email'
+      }
+    }
+  });
 };
+
