@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js" defer></script>
+  <title>Project Pixels Art</title>
+</head>
+<body>
+  <h1 id="title">Paleta de Cores</h1>
+
+  <div id="color-palette">
+    <div id="black" class="color selected" style="background-color: black;"></div>
+    <div id="blue" class="color randomColor" style="background-color: blue;"></div>
+    <div id="red" class="color randomColor" style="background-color: red;"></div>
+    <div id="yellow" class="color randomColor" style="background-color: yellow;"></div>
+  </div>
+
+  <input type="number" name="board-size" id="board-size" min="1" oninput="validity.valid||(value='');">
+  <button type="button" id="generate-board">VQV</button>
+  
+  <div id="button-clear-board">
+    <button id="clear-board" type="button">Limpar</button>
+  </div>
+
+  <div id="board-container">
+    <div id="pixel-board">
+      <div class="pixel-line">
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+      </div>
+      <div class="pixel-line">
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+          <div class="pixel"></div>
+      </div>
+      <div class="pixel-line">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+      </div>
+      <div class="pixel-line">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+      </div>
+      <div class="pixel-line">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
