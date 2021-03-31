@@ -1,13 +1,11 @@
 import React from 'react';
-import Table from './components/Table';
+import StarWarsDataTable from './pages/StarWarsDataTables';
 import Provider from './context/Provider';
-import Filters from './components/Filters';
 
 function App() {
   return (
     <Provider>
-      <Filters />
-      <Table />
+      <StarWarsDataTable />
     </Provider>
   );
 }
