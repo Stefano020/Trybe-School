@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import StarWarsContext from './StarWarsContext';
 import fetchStarWarsApi from '../services/StarWarsApi';
 
-function Provider({ children }) {
+export default function Provider({ children }) {
   const [planets, setPlanets] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [filters, setFilters] = useState({
@@ -16,7 +16,6 @@ function Provider({ children }) {
   });
 
   useEffect(() => {
-    setIsLoading(true);
     fetchStarWarsApi().then((response) => {
       setPlanets(response);
     });
@@ -35,5 +34,3 @@ function Provider({ children }) {
 Provider.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Provider;

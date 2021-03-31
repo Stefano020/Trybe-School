@@ -1,17 +1,11 @@
 import React, { useContext, useState } from 'react';
 import StarWarsContext from '../context/StarWarsContext';
 
-function Filters() {
-  // const { filters, setFilters } = useContext(StarWarsContext);
+export default function Filters() {
   const ZERO = 0;
   const { planets,
-    filters:
-    { filterByNumericValues }, setFilters, filters } = useContext(StarWarsContext);
-  const handleOnRemoveFilter = (myFilter) => {
-    setFilters({ ...filters,
-      filterByNumericValues: filterByNumericValues.filter((event) => (
-        event !== myFilter)) });
-  };
+    filters: { filterByNumericValues },
+    setFilters, filters } = useContext(StarWarsContext);
 
   const [column, setColumn] = useState('');
   const [comparison, setComparison] = useState('');
@@ -20,6 +14,12 @@ function Filters() {
   const [columnToSort, setColumnToSort] = useState('name');
   const [sortOrder, setSortOrder] = useState('ASC');
   const ASCOrder = (sortOrder === 'ASC');
+
+  const handleOnRemoveFilter = (myFilter) => {
+    setFilters({ ...filters,
+      filterByNumericValues: filterByNumericValues.filter((event) => (
+        event !== myFilter)) });
+  };
 
   const handleOnOrderFilter = () => {
     setFilters({
@@ -34,7 +34,6 @@ function Filters() {
   const handleOnChange = (event) => {
     const { value } = event.target;
     setFilters((prevState) => ({ ...prevState, filterByName: { name: value } }));
-    // console.log('funcionaOnChange');
   };
 
   const handleChangeOnColumn = (event) => {
@@ -158,5 +157,3 @@ function Filters() {
 
   );
 }
-
-export default Filters;
