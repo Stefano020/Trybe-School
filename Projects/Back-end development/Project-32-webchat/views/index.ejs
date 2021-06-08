@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/socket.io/socket.io.js"></script>
+  <title>Project WebChat</title>
+</head>
+<body>
+  <h1>Web Chat</h1>
+
+  <h2 id='userNickname'></h2>
+  <input type="text" id="userNicknameInput" data-testid="nickname-box" placeholder="Digite seu apelido...">
+  <button id='userNicknameChange' data-testid="nickname-button">Salvar</button>
+    
+  <input type="text" id="message" data-testid="message-box" placeholder="Digite sua mensagem...">
+  <button id='sendMessage' data-testid="send-button">Enviar</button>
+
+  <h3>Mensagens</h3>
+  <ul id='allMessages'>
+    <% allMessages.forEach((message) => { %>
+      <p data-testid="message">
+        <%= `${message.timestamp} - ${message.nickname}: ${message.chatMessage}`%>
+      </p>
+    <% }) %>
+  </ul>
+
+  <h3>Usuários Online</h3>
+  <ul id='users'></ul>
+
+  <h3>Log Status</h3>
+  <ul id='logStatus'></ul>
+
+  <script>
+    // aqui define o canal do front com o back
+    const socket = io('http://localhost:3000');
+
+    let nickname = Math.random().toString(16).substr(2, 8)
+      +Math.random().toString(16).substr(2, 8);
+    let nicknameField = document.getElementById('userNickname');
+    nicknameField.innerHTML = nickname;
+
+    socket.emit('newUser', nickname);
+
+    document.querySelector('#sendMessage').addEventListener('click', (e) => {
+      const chatMessage = document.querySelector('#message').value;
+      console.log('meu chatMessage')
+      nickname = nicknameField.innerHTML;
+      socket.emit('message', {chatMessage, nickname});
+    })
+
+    document.getElementById('userNicknameChange').addEventListener('click', (e) => {
+      const nicknameInput = document.getElementById('userNicknameInput').value;
+      nicknameField.innerHTML = nicknameInput;
+      // socket.emit('message', {chatMessage, nickname});
+      socket.emit('newUser', nicknameInput);
+    })
+
+    socket.on('message', (message) => {
+      const messageLI = document.createElement('li');
+      const dataTestId = document.createAttribute('data-testid');
+      dataTestId.value = 'message';
+      messageLI.setAttributeNode(dataTestId);
+      messageLI.innerHTML = message;
+      
+      document.querySelector('#allMessages').appendChild(messageLI);
+    });
+
+    socket.on('updateUsers', (users) => {
+      const usersList = document.querySelector('#users');
+      usersList.innerHTML = '';
+
+      const currentUser = users.find((user) => user.socketId === socket.id);
+      if (currentUser) {
+        const userIndex = users.indexOf(currentUser);
+          users.splice(userIndex, 1);
+          users.unshift(currentUser);
+      }
+
+      users.forEach((user) => {
+        const userLI = document.createElement('li');
+        userLI.setAttribute('data-testid', 'online-user');
+        userLI.innerHTML = user.name;
+        usersList.appendChild(userLI);
+      })
+    });
+
+    socket.on('logStatus', (logStatus) => {
+      const logStatusLI = document.createElement('li');
+      logStatusLI.innerHTML = logStatus;
+      document.querySelector('#logStatus').appendChild(logStatusLI);
+    });
+
+  </script>
+</body>
+</html>
